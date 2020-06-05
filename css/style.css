@@ -92,6 +92,9 @@ li a {
   align-items: center;
   color: #000;
 }
+li a:focus {
+  color: #fa6c98;
+}
 .middle-hover-link a {
   position: relative;
   transition: all 0.6s;

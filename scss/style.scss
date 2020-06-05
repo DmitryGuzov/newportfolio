@@ -121,7 +121,10 @@ li {
 		display: flex;
   		justify-content: center;
 		  align-items: center;
-		  color: #000;
+		  color: #000;		  
+		  &:focus{
+			  color: $pink;
+		  }
 	}
 }
 // 
@@ -146,7 +149,7 @@ li {
 		left: 0;
 		background: black;		
 	  }
-	}
+	}	
   }
 // 
 .language{
