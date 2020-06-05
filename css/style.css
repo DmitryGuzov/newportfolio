@@ -199,7 +199,7 @@ li a {
   font-size: 2.25rem;
   font-weight: 700;
 }
-.left-side h3 .dot {
+.left-side h3 .dott {
   color: #0065ad;
 }
 .left-side p {
@@ -282,6 +282,8 @@ section {
   height: calc(100vh - 60px);
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-flow: column;
   border-bottom: 1px solid #000;
 }
 section:nth-child(odd) {

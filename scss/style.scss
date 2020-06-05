@@ -1,4 +1,5 @@
 /*** Mixins & Default Styles ***/
+
 @mixin object($width, $height, $bg) {
 	width: $width;
 	height: $height;
@@ -229,7 +230,7 @@ li {
 		font-family: $basic-font-family;
 		font-size: 2.25rem;
 		font-weight: 700;
-		.dot {
+		.dott {
 			color: #0065ad;
 		  }
 	}
@@ -320,6 +321,8 @@ section {
 	@include object(100vw,calc(100vh - 60px),null);
 	display:flex;
 	justify-content:center;
+	align-items: center;
+	flex-flow: column;
 	&:nth-child(odd){
 		background: $pink;
 	}
