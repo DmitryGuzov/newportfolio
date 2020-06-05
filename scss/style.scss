@@ -266,6 +266,13 @@ li {
 			  a{
 				  margin-left: 5px;
 			  }
+			  .fab{
+				  color: black;
+				  transition: all 0.2s linear;
+			  }
+			  .fab:hover{
+				  color: $pink;
+			  }
 		  }
 	  }
 }

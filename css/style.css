@@ -233,6 +233,13 @@ li a {
 .left-side .social .social-icon a {
   margin-left: 5px;
 }
+.left-side .social .social-icon .fab {
+  color: black;
+  transition: all 0.2s linear;
+}
+.left-side .social .social-icon .fab:hover {
+  color: #fa6c98;
+}
 .btn {
   padding: 0 5px;
   text-decoration: none;
