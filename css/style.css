@@ -45,7 +45,7 @@ nav.navShadow #word-mark {
   align-items: center;
 }
 #brand {
-  padding-left: 40px;
+  padding-left: 20px;
 }
 #logo {
   width: 55px;
@@ -61,7 +61,7 @@ nav.navShadow #word-mark {
 }
 #word-mark {
   width: auto;
-  height: 20px;
+  height: auto;
   background: #fa6c98;
   border-radius: 50px;
   margin-left: 20px;
@@ -71,12 +71,13 @@ nav.navShadow #word-mark {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-family: 'Comfortaa', cursive;
 }
 /*** Menu Styles ***/
 #menu {
   justify-content: flex-end;
-  padding-right: 40px;
+  padding-right: 20px;
   font-family: 'Comfortaa', cursive;
 }
 li {
@@ -368,7 +369,7 @@ section:nth-child(even) {
     height: 500px;
  }
   .right-side span {
-    background-size: cover;
+    background-size: contain;
     height: 500px;
  }
   .left-side {
@@ -376,5 +377,12 @@ section:nth-child(even) {
     width: 100%;
     height: auto;
     margin-left: 0;
+ }
+}
+@media screen and (max-width: 490px) {
+  #logo {
+    height: 100%;
+    width: 80px;
+    border-radius: 0;
  }
 }

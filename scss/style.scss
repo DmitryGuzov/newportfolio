@@ -76,7 +76,7 @@ ul {
 }
 
 #brand {
-	padding-left:40px;
+	padding-left:20px;
 }
 
 #logo {
@@ -91,7 +91,7 @@ ul {
 }
 
 #word-mark{
-	@include object(auto,20px,$pink);
+	@include object(auto,auto,$pink);
 	border-radius:50px;
 	margin-left: 20px;
 	padding: 0 5px;
@@ -100,13 +100,14 @@ ul {
 	display: flex; 
 	justify-content: center; 
 	align-items: center;
+	text-align: center;
 	font-family: $basic-font-family;
 }
 
 /*** Menu Styles ***/
 #menu {
 	justify-content:flex-end;
-	padding-right:40px;
+	padding-right:20px;
 	font-family: $basic-font-family;
 }
 
@@ -406,7 +407,7 @@ section {
 		width: 100%;
 		height: 500px;
 		span{
-			background-size: cover;
+			background-size: contain;
 			height: 500px;
 		}
 	}
@@ -415,5 +416,13 @@ section {
 		width: 100%;
 		height: auto;
 		margin-left: 0;
+	}
+}
+
+@media screen and (max-width:490px){
+	#logo{
+		height: 100%;
+		width: 80px;
+		border-radius: 0;
 	}
 }
