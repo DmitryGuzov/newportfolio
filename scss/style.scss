@@ -44,7 +44,7 @@ $basic-font-family: 'Comfortaa', cursive;
 
 /*** Header Styles ***/
 header {
-	@include object(100vw,100vh,$accent);
+	@include object(100vw,auto,$accent);
 	display:flex;
 	border-bottom: 1px solid #000;
 }
@@ -327,8 +327,8 @@ li {
 }
 /*** Section Styles ***/
 section {
-	// @include object(100vw,calc(100vh - 60px),null);
-	@include object(100vw,600px,null);
+	@include object(100vw,calc(100vh - 60px),null);
+	// @include object(100vw,600px,null);
 	display:flex;
 	justify-content:center;
 	align-items: center;

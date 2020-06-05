@@ -16,7 +16,7 @@
 /*** Header Styles ***/
 header {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   background: #fff;
   display: flex;
   border-bottom: 1px solid #000;
@@ -287,7 +287,7 @@ li a {
 /*** Section Styles ***/
 section {
   width: 100vw;
-  height: 600px;
+  height: calc(100vh - 60px);
   display: flex;
   justify-content: center;
   align-items: center;
