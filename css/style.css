@@ -389,6 +389,9 @@ section:nth-child(even) {
     border-radius: 0;
  }
 }
+.container {
+  height: auto;
+}
 .portfolio {
   width: 100%;
   height: 100%;
