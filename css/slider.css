@@ -58,6 +58,9 @@ body {
 .image-6 {
     background-color: navy;
 }
+.images {
+    background-color: transparent;
+}
 /* Блок с контролами */
 .slider-controls {
     padding: 20px;

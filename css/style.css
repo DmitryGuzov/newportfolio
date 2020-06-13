@@ -389,7 +389,6 @@ section:nth-child(even) {
     border-radius: 0;
  }
 }
-/*  */
 .portfolio {
   width: 100%;
   height: 100%;
@@ -415,7 +414,7 @@ section:nth-child(even) {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.portfolio-title .dot {
+.portfolio-title .dott {
   color: blue;
 }
 .portfolio-row {
@@ -462,4 +461,21 @@ section:nth-child(even) {
 }
 .hover-state:hover .hover-adress {
   display: block;
+}
+.footer {
+  background: #efefef;
+  height: 50px;
+  width: 100%;
+}
+.footer .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.footer .container p {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  opacity: 0.8;
 }
