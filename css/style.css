@@ -282,7 +282,7 @@ li a:focus {
   width: 100%;
   height: 500px;
   display: inline-block;
-  background: url(../images/my-photo-profile.jpg);
+  background: url(../images/my-photo-profile2.jpg);
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
@@ -388,4 +388,94 @@ section:nth-child(even) {
     width: 80px;
     border-radius: 0;
  }
+}
+.portfolio {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+.portfolio-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-bottom: 30px;
+  padding-top: 50px;
+}
+.portfolio-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.portfolio-title p {
+  color: gray;
+  font-size: 1rem;
+  line-height: 1.56;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.portfolio-title .dott {
+  color: blue;
+}
+.portfolio-row {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.portfolio-card {
+  overflow: hidden;
+  text-align: center;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+}
+.portfolio-card img {
+  width: 100%;
+}
+.hover-adress {
+  display: none;
+  position: absolute;
+  bottom: 0;
+}
+.hover-adress a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.275rem;
+}
+.hover-state {
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hover-state:hover {
+  transform: scale(1.2);
+  background: black;
+  border-radius: 8px;
+  color: white;
+}
+.hover-state:hover .hover-adress {
+  display: block;
+}
+.footer {
+  background: #efefef;
+  height: 50px;
+  width: 100%;
+}
+.footer .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.footer .container p {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  opacity: 0.8;
 }
