@@ -65,7 +65,7 @@ body {
 }
 /* Блок с контролами внутри окна */
 .slider-content__controls {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
