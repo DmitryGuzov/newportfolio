@@ -68,7 +68,6 @@ body {
 }
 /* Блок с контролами внутри окна */
 .slider-content__controls {
-    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
@@ -105,14 +104,14 @@ body {
     display: flex;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 10%;
+    bottom: 2%;
 }
 .dot {
     cursor: pointer;
     width: 8px;
     height: 8px;
     margin-right: 4px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
    /*box-shadow: 0 0 5px 0px rgba(0,0,0,0.9);
    */
     border-radius: 50%;
@@ -122,10 +121,10 @@ body {
     margin-right: 0;
 }
 .dot:hover {
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 1);
 }
 .dot--active {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(230, 10, 113, 1);
 }
 /* Buttons */
 button {

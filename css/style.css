@@ -86,7 +86,7 @@ li {
 li a {
   height: 20px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 1.1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,7 +125,7 @@ li a:focus {
   align-items: center;
   width: 22px;
   height: 22px;
-  font-size: 14px;
+  font-size: 0.9rem;
   background-color: white;
   border: 1px solid black;
   border-radius: 2px;
@@ -200,14 +200,15 @@ li a:focus {
 }
 .left-side h3 {
   font-family: 'Comfortaa', cursive;
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 700;
+  margin-top: 10px;
 }
 .left-side h3 .dott {
   color: #0065ad;
 }
 .left-side p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.56;
   color: gray;
   text-align: justify;
@@ -222,17 +223,23 @@ li a:focus {
 .left-side .adress-info .phone-title, .left-side .adress-info .email-title {
   font-family: 'Comfortaa', cursive;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.8rem;
   padding-bottom: 5px;
 }
 .left-side .adress-info .phone-title span, .left-side .adress-info .email-title span {
   padding-left: 10px;
-  font-size: 13px;
+  font-size: 0.8rem;
   color: gray;
 }
 .left-side .social {
   display: flex;
   flex-flow: row;
+  align-items: center;
+}
+.left-side .social span {
+  font-family: 'Comfortaa', cursive;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 .left-side .social .social-icon a {
   margin-left: 5px;
@@ -290,7 +297,8 @@ li a:focus {
 /*** Section Styles ***/
 section {
   width: 100vw;
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -298,10 +306,10 @@ section {
   border-bottom: 1px solid #000;
 }
 section:nth-child(odd) {
-  background: #fa6c98;
+  background: white;
 }
 section:nth-child(even) {
-  background: #79edfc;
+  background: white;
 }
 #heading {
   width: 120px;
@@ -313,6 +321,7 @@ section:nth-child(even) {
   justify-content: center;
   align-items: center;
   font-family: 'Comfortaa', cursive;
+  font-size: 2rem;
 }
 /*** Responsive Menu For Smaller Device ***/
 @media screen and (max-width: 767px) {
@@ -404,18 +413,20 @@ section:nth-child(even) {
   align-items: center;
   flex-flow: column;
   margin-bottom: 30px;
-  padding-top: 50px;
+  padding-top: 20px;
+  font-family: 'Comfortaa', cursive;
 }
 .portfolio-title h2 {
+  color: #000;
   font-size: 2rem;
-  font-weight: 600;
 }
 .portfolio-title p {
   color: gray;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.56;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 .portfolio-title .dott {
   color: blue;
@@ -465,10 +476,17 @@ section:nth-child(even) {
 .hover-state:hover .hover-adress {
   display: block;
 }
+@media (max-width: 360px) {
+  .portfolio-card {
+    width: 100px;
+    height: 100px;
+ }
+}
 .footer {
-  background: #efefef;
+  background: #fff;
   height: 50px;
   width: 100%;
+  font-family: 'Comfortaa', cursive;
 }
 .footer .container {
   height: 100%;
@@ -478,7 +496,7 @@ section:nth-child(even) {
   flex-flow: column;
 }
 .footer .container p {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   line-height: 1.4;
   opacity: 0.8;
 }

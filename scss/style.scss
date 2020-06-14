@@ -117,7 +117,7 @@ li {
 	a {
 		@include object(null,20px,null);				
 		text-decoration: none;		
-		font-size: 15px;
+		font-size: 1.1rem;
 		display: flex;
   		justify-content: center;
 		  align-items: center;
@@ -163,7 +163,7 @@ li {
       align-items: center;
 	  width: 22px;
 	  height: 22px;
-	  font-size: 14px;
+	  font-size: 0.9rem;
       background-color: white;
       border: 1px solid black;
       border-radius: 2px;
@@ -233,14 +233,15 @@ li {
 	margin-left: 10%;
 	h3{
 		font-family: $basic-font-family;
-		font-size: 2.25rem;
+		font-size: 2rem;
 		font-weight: 700;
+		margin-top: 10px;
 		.dott {
 			color: #0065ad;
 		  }
 	}
 	p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         line-height: 1.56;
         color: gray;
         text-align: justify;
@@ -255,11 +256,11 @@ li {
 		  .email-title{			
 			font-family: $basic-font-family;
 			font-weight: 700;
-			font-size: 13px;
+			font-size: 0.8rem;
 			padding-bottom: 5px;
 			span{				
 				padding-left: 10px;				
-				font-size: 13px;
+				font-size: 0.8rem;
 				color: gray;
 			}
 		  }
@@ -267,6 +268,12 @@ li {
 	  .social{
 		  display: flex;
 		  flex-flow: row;
+		  align-items: center;
+		  span {			
+			font-family: $basic-font-family;
+			font-size: 0.8rem;
+			font-weight: 600;
+		  }
 		  .social-icon{
 			  a{
 				  margin-left: 5px;
@@ -330,17 +337,21 @@ li {
 }
 /*** Section Styles ***/
 section {
-	@include object(100vw,calc(100vh - 60px),null);
+	// @include object(100vw,calc(100vh - 60px),null);
+	// @include object(100vw,auto,null);
+	width: 100vw;
+	min-height: calc(100vh - 60px);
+	height: auto;
 	// @include object(100vw,600px,null);
 	display:flex;
 	justify-content:center;
 	align-items: center;
 	flex-flow: column;
 	&:nth-child(odd){
-		background: $pink;
+		background: white;
 	}
 	&:nth-child(even){
-		background: $aqua;
+		background: white;
 	}
 	border-bottom: 1px solid #000;
 }
@@ -352,7 +363,8 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: $basic-font-family;	
+	font-family: $basic-font-family;
+	font-size: 2rem;	
 }
 
 /*** Responsive Menu For Smaller Device ***/
@@ -443,24 +455,27 @@ section {
 	
   }
   .portfolio-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    margin-bottom: 30px;
-    padding-top: 50px;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	flex-flow: column;
+    	margin-bottom: 30px;
+		padding-top: 20px;
+		font-family: $basic-font-family;
 
     h2 {
-      font-size: 2rem;
-      font-weight: 600;
+		color: #000;
+      	font-size: 2rem;
+		  // font-weight: 600;		  
     }
 
     p {
       color: gray;
-      font-size: 1rem;
+      font-size: 0.9rem;
       line-height: 1.56;
       margin-top: 10px;
-      margin-bottom: 10px;
+	  margin-bottom: 10px;
+	  text-align: center;
     }
 
     .dott {
@@ -521,12 +536,20 @@ section {
     color: white;
   }
 
+
+  @media(max-width: 360px) {
+	.portfolio-card {
+		width: 100px;
+		height: 100px;
+	}
+  }
 //   footer
 
 .footer {
-    background: #efefef;
+    background: #fff;
     height: 50px;
-    width: 100%;
+	width: 100%;
+	font-family: $basic-font-family;
 
     .container {
       height: 100%;
@@ -536,7 +559,7 @@ section {
       flex-flow: column;
 
       p {
-        font-size: 0.875rem;
+        font-size: 0.9rem;
         line-height: 1.4;
         opacity: 0.8;
       }
