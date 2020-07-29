@@ -755,7 +755,8 @@ section:nth-child(even) {
   flex-flow: column;
 }
 .footer .container p {
+  color: #000;
   font-size: 0.9rem;
   line-height: 1.4;
-  opacity: 0.8;
+  opacity: 1;
 }
