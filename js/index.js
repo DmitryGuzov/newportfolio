@@ -4,7 +4,7 @@ $( () => {
 	$(window).scroll( () => {
 		var windowTop = $(window).scrollTop();
 		windowTop > 100 ? $('nav').addClass('navShadow') : $('nav').removeClass('navShadow');
-		windowTop > 100 ? $('ul').css('top','60px') : $('ul').css('top','100px');
+		windowTop > 100 ? $('ul.menu-list').css('top','60px') : $('ul.menu-list').css('top','100px');
 	});
 	
 	//Click Logo To Scroll To Top
