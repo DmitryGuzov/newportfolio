@@ -827,15 +827,17 @@ section:nth-child(even) {
   outline: none;
   border: none;
   border-radius: 3px;
-  background: white;
-  color: black;
+  /* background: white; */
+  background: #fa6c98;
+  
+  color: white;
   font-weight: bold;
   cursor: pointer;
   transition: 0.4s ease;  
 }
 .card .info button:hover {
-  background: dodgerblue;
-  color: white;
+  background: #fa6c98;  
+  color: black;
 }
 @media screen and (max-width: 450px) {
   .card {
