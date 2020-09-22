@@ -814,8 +814,11 @@ section:nth-child(even) {
   opacity: 0;
   transform: translateY(30px);
   transition: 0.5s;
+  display: none;
 }
-
+.card:hover .info {
+  display: block;
+}
 .card .info p {  
   font-size: 15px;
   display: inline-block;
@@ -847,6 +850,9 @@ section:nth-child(even) {
     align-items: center;
     justify-content: center;
     padding: 3px;
+  }
+  .card:hover .info {
+    display: flex;
   }
   .card .info {
     width: 100%;
