@@ -283,15 +283,20 @@ header .bar:last-child {
   height: auto;
   overflow: hidden;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .right-side span {
-  width: 100%;
+  width: 300px;
   height: 500px;
   display: inline-block;
   background: url(../images/my-photo-profile.jpg);
-  background-position: top;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
 /*** Section Styles ***/
 section {
@@ -766,11 +771,12 @@ section:nth-child(even) {
   height: 280px;
   margin: 10px;
   border-radius: 15px;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   background: white;
   position: relative;
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
+  /* align-items: center; */
   transition: 0.2s ease-out;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
@@ -815,6 +821,7 @@ section:nth-child(even) {
   transform: translateY(30px);
   transition: 0.5s;
   display: none;
+  width: 100%;
 }
 .card:hover .info {
   display: block;
@@ -842,6 +849,23 @@ section:nth-child(even) {
   background: #fa6c98;  
   color: black;
 }
+.card .info button {
+  position: absolute;        
+}
+.card .info .git-link {
+  bottom: 0;
+  left: -1px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 15px;
+}
+.card .info .see-link {
+  right: -1px;
+  bottom: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 15px;
+}
 @media screen and (max-width: 450px) {
   .card {
     width: 130px;
@@ -860,7 +884,7 @@ section:nth-child(even) {
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;    
   }
   .card .info p {    
     width: 90%;
@@ -868,10 +892,10 @@ section:nth-child(even) {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    transition: all 200ms ease-in-out;
+    transition: all 300ms ease-in-out;
   }
   .card .info p:hover {
-    padding: 10px;
+    /* padding: 10px; */
     position: absolute;
     width: 150px;
     min-height: 90px;
@@ -885,7 +909,6 @@ section:nth-child(even) {
     color: #fff;
     z-index: 10;
   }
-  .card .info button {
-    margin-top: 10px;
-  }
+  
+  
 }
