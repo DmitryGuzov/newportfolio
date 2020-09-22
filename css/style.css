@@ -395,7 +395,7 @@ section:nth-child(even) {
     border-radius: 0;
  }
 }
-.section-skills {
+.section-skills {  
   font-family: "Comfortaa", cursive;
   display: flex;
   justify-content: space-evenly;
@@ -422,7 +422,7 @@ section:nth-child(even) {
 .section-skills ul li:hover {
   cursor: pointer;
 }
-#section01, #section02, #section03, #section04 {
+#section00,#section01, #section02, #section03, #section04 {
   border-bottom: 1px solid #000;
 }
 .section-education {
