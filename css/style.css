@@ -65,7 +65,7 @@ header #word-mark {
   background: #fa6c98;
   border-radius: 50px;
   margin-left: 20px;
-  padding: 0 5px;
+  padding: 3px 5px;
   opacity: 1;
   transition: all 0.3s;
   display: flex;
