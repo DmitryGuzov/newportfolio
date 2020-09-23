@@ -857,7 +857,7 @@ section:nth-child(even) {
   left: -1px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .card .info .see-link {
   right: -1px;
