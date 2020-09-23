@@ -830,7 +830,8 @@ section:nth-child(even) {
   font-size: 15px;
   display: inline-block;
   text-overflow: ellipsis;  
-  overflow: hidden;  
+  overflow: hidden;
+  text-align: center;
 }
 .card .info button {
   display: inline-block;  
