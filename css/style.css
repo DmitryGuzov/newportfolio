@@ -775,7 +775,8 @@ section:nth-child(even) {
   background: white;
   position: relative;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  flex-grow: 1;
   /* align-items: center; */
   transition: 0.2s ease-out;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
