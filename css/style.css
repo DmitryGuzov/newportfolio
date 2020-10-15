@@ -409,7 +409,7 @@ section:nth-child(even) {
 .section-skills ul {
   margin: 15px 10px;
   width: auto;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
 }
 .section-skills ul li {
@@ -424,9 +424,9 @@ section:nth-child(even) {
   width: auto;
   text-align: center;
 }
-.section-skills ul li:hover {
+/* .section-skills ul li:hover {
   cursor: pointer;
-}
+} */
 #section00,#section01, #section02, #section03, #section04 {
   border-bottom: 1px solid #000;
 }
