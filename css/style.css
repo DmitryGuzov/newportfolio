@@ -224,13 +224,20 @@ header .bar:last-child {
   font-weight: 700;
   font-size: 0.8rem;
   padding-bottom: 5px;
+  margin-top: 10px;
+  
 }
 .left-side .adress-info .phone-title span, .left-side .adress-info .email-title span {
   padding-left: 10px;
   font-size: 0.8rem;
   color: gray;
+  margin-left: 10px;  
+}
+.left-side .adress-info .email-title span {
+  padding-left: 20px;
 }
 .left-side .social {
+  margin-top: 10px;
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -238,10 +245,13 @@ header .bar:last-child {
 .left-side .social span {
   font-family: "Comfortaa", cursive;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 600;  
+}
+.left-side .social .social-icon {
+  padding-left: 15px;
 }
 .left-side .social .social-icon a {
-  margin-left: 5px;
+  margin-left: 5px;  
 }
 .left-side .social .social-icon .fab {
   color: black;
@@ -255,7 +265,7 @@ header .bar:last-child {
   text-decoration: none;
   outline: none;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 15px;
   width: auto;
   height: 45px;
   line-height: 45px;
@@ -271,6 +281,9 @@ header .bar:last-child {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
   font-family: "Comfortaa", cursive;
+  -webkit-box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.4);
+-moz-box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.4);
+box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.4);
 }
 .btn-download:hover {
   background: black;
@@ -407,12 +420,12 @@ section:nth-child(even) {
   flex-flow: column;
 }
 .section-skills ul {
-  margin: 15px 10px;
+  margin: 15px 10px;  
   width: auto;
   text-align: left;
   font-weight: 700;
 }
-.section-skills ul li {
+.section-skills ul li {  
   font-weight: 300;
   font-size: 14px;
   display: inline-block;
@@ -424,9 +437,11 @@ section:nth-child(even) {
   width: auto;
   text-align: center;
 }
-/* .section-skills ul li:hover {
-  cursor: pointer;
-} */
+@media screen and (max-width: 475px) { 
+  .section-skills ul li:first-child {  
+    margin-top: 10px;
+  }
+}
 #section00,#section01, #section02, #section03, #section04 {
   border-bottom: 1px solid #000;
 }
@@ -709,7 +724,7 @@ section:nth-child(even) {
   border: 2px solid black;
   border-radius: 50%;
   width: 140px;
-  height: 140px;
+  height: 140px;    
 }
 .portfolio-card img {
   width: 100%;
@@ -770,16 +785,13 @@ section:nth-child(even) {
   width: 200px;
   height: 280px;
   margin: 10px;
-  border-radius: 15px;
-  /* padding: 1.5rem; */
+  border-radius: 15px;  
   background: white;
   position: relative;
-  display: flex;
-  /* justify-content: center; */
-  flex-grow: 1;
-  /* align-items: center; */
+  display: flex;  
+  flex-grow: 1;  
   transition: 0.2s ease-out;
-  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);  
 }
 .card:hover {
   transform: translateY(20px);
@@ -838,8 +850,7 @@ section:nth-child(even) {
   display: inline-block;  
   outline: none;
   border: none;
-  border-radius: 3px;
-  /* background: white; */
+  border-radius: 3px;  
   background: #fa6c98;
   
   color: white;
