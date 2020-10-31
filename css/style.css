@@ -264,13 +264,12 @@ header .bar:last-child {
   padding: 0 5px;
   text-decoration: none;
   outline: none;
-  display: inline-block;
-  margin-top: 15px;
+  display: inline-block;  
   width: auto;
   height: 45px;
   line-height: 45px;
   border-radius: 45px;
-  margin: 10px 20px;
+  margin: 40px 0px;
   font-size: 0.75rem;
   text-transform: uppercase;
   text-align: center;
