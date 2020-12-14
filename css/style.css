@@ -889,7 +889,7 @@ section:nth-child(even) {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 .card .info {
   position: relative;
@@ -915,7 +915,7 @@ section:nth-child(even) {
   display: inline-block;
   outline: none;
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   /* background: #fa6c98; */
   background-color: rgb(3, 194, 194);
 
@@ -980,7 +980,7 @@ section:nth-child(even) {
     width: 150px;
     min-height: 90px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 4px;
     top: 0;
     text-overflow: clip;
     white-space: normal;
