@@ -1,12 +1,13 @@
 /* base */
 * {
   box-sizing: border-box;
+  font-family: 'Comfortaa, Arial', cursive;
 }
-body {
+/* body {
   margin: 0;
   height: 100vh;
   font-family: Tahoma, 'sans-serif';
-}
+} */
 /* slider обертка */
 .slider {
   position: relative;
