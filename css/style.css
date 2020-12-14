@@ -556,7 +556,7 @@ section:nth-child(even) {
   background-color: rgb(3, 194, 194);
   /* background-color: purple; */
   padding: 6px 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   font-weight: 600;
   text-align: left;
 }
